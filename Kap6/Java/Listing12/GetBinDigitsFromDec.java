@@ -1,4 +1,4 @@
-public class GetDecDigitsFromBin {
+public class GetBinDigitsFromDec {
     public static void main(String[] args) {
         int basis = 2;
         int i = 324;
