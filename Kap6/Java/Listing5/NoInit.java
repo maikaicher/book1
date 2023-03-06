@@ -1,6 +1,7 @@
 public class NoInit {
     public static void main(String[] args) {
-        int zahlVariable;
-        System.out.print("Wert: " + zahlVariable);
+        //remove comment for exploring the compiler error
+        //int zahlVariable;
+        //System.out.print("Wert: " + zahlVariable);
     }
 }
