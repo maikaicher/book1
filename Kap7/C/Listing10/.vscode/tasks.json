@@ -2,26 +2,6 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cl.exe Aktive Datei kompilieren",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$msCompile"
-            ],
-            "group": "build",
-            "detail": "Vom Debugger generierte Aufgabe."
-        },
-        {
-            "type": "cppbuild",
             "label": "C/C++: gcc.exe Aktive Datei kompilieren",
             "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
