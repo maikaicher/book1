@@ -1,6 +1,8 @@
-﻿int[,] zahlArray =  {{11, 12}, {21, 22}, {31, 32}};
-Console.WriteLine("Gesamtlänge: " + zahlArray.Length);
-Console.WriteLine("Höhe: " + zahlArray.GetLength(0));
-Console.WriteLine("Breite: " + zahlArray.GetLength(1));
-Console.WriteLine("wert bei 0/0: " + zahlArray[0,0]);
-Console.WriteLine("Wert bei 2/1: " + zahlArray[2,1]);
+﻿int[][] zahlArray = new int[3][];
+zahlArray[0] = new int [4];
+zahlArray[1] = new int [3];
+zahlArray[2] = new int [5];
+Console.WriteLine ("Gesamtlänge: " + zahlArray.Length);
+Console.WriteLine("Breite bei 0: " + zahlArray[0].Length);
+Console.WriteLine("Breite bei 1: " + zahlArray[1].Length);
+Console.WriteLine("Breite bei 2: " + zahlArray[2].Length);
