@@ -2,3 +2,5 @@
 *.class
 *.dll
 *.pdb
+bin/
+obj/
