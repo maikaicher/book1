@@ -4,3 +4,4 @@
 *.pdb
 bin/
 obj/
+__pycache__/

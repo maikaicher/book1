@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module">
+      import {doSum, doSub} from "./modules/MyFunctions.js";
+      function callSum() {
+        alert(doSum(1, 2, 4));
+      }
+      function callSub() {
+        alert(doSub(4, 1));
+      }
+      document.getElementById("btt1").addEventListener("click", callSum);
+      document.getElementById("btt2").addEventListener("click", callSub);
+    </script>
+
+    <script>
+      function doSomething() {
+        callSum();
+      }
+    </script>
+    </head>
+  <body>
+	  <h1>JavaScript example</h1>
+	  <button id="btt1">Sum</button></br></br>
+	  <button id="btt2">Subtract</button></br></br>
+    <div id="test"></div>
+  </body>
+<html>
