@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="ProcessInputFunction.js"></script>
+    <script>
+	var z_zahl = 0;
+	var u_zahl = 0; 
+
+	function initProgram() {		
+		z_zahl = Math.floor(Math.random() * 1001);
+		u_zahl = document.getElementById("numbInput").value;	
+	}
+	function myButtonClicked() {
+		if(getNumber()) {
+			processInput();
+		}
+	}
+	function getNumber() {
+		var inputVal = document.getElementById("numbInput").value;
+		if (/\d+$/.test(inputVal)) {
+			u_zahl = inputVal;
+			return true;
+		}
+		document.getElementById("numbInput").value= u_zahl;
+		return false;		
+	}
+
+	function setInfoText(newInfoText) {
+		document.getElementById("gameOutput").innerHTML = newInfoText;
+	}	
+    </script>
+  </head>
+  <body onload="initProgram()">
+	  <h1>Zahlenraten</h1>
+	  <input type="text" id="numbInput" value="0"/>
+	  <button id="playButton" onclick="myButtonClicked()">go!</button></br></br>
+	  <div id="gameOutput">Bitte Zahl zwischen 0 und 1000 eingeben.</div>
+  </body>
+<html>
