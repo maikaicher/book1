@@ -43,7 +43,11 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "map": "cpp",
+        "xtree": "cpp",
+        "string": "cpp",
+        "numbers": "cpp"
     },
     "python.analysis.extraPaths": [
         "./Kap10/Python/Listing64/root"

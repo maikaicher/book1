@@ -3,6 +3,195 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing39_48.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "RightShiftTest",
+            "request": "launch",
+            "mainClass": "Kap12.Java.Listing26n.RightShiftTest",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "RightShiftTest",
+            "request": "launch",
+            "mainClass": "Kap12.Java.Listing25n.RightShiftTest",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "RightShiftTest",
+            "request": "launch",
+            "mainClass": "Kap12.Java.Listing23n.RightShiftTest",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "TestMyArrayList",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing60.TestMyArrayList",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "StaticExample",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing49.StaticExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "TestMyArrayList",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing55_59.TestMyArrayList",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "MyArrayList",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing60_61.MyArrayList",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "MyArrayList",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing55_59.MyArrayList",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing50_53.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "DoInit",
+            "request": "launch",
+            "mainClass": "DoInit",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "StaticExample",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing_49.StaticExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing39_46.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing38.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing34_36.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing31_33.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing29_30.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing27_28.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing24_26.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing22_23.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing20_21.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing17.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing16.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing15.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing14.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing08_12.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Grafikprogramm",
+            "request": "launch",
+            "mainClass": "Kap13.Java.Listing08_12.mygraphs.Grafikprogramm",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "OperatorOr",
             "request": "launch",
             "mainClass": "OperatorOr",
