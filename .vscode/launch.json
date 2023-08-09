@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExceptionExample",
+            "request": "launch",
+            "mainClass": "Kap14.Java.Listing08_13.ExceptionExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FirstFinally",
+            "request": "launch",
+            "mainClass": "Kap14.Java.Listing07.FirstFinally",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FirstTryCatch",
+            "request": "launch",
+            "mainClass": "Kap14.Java.Listing06.FirstTryCatch",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FirstException",
+            "request": "launch",
+            "mainClass": "Kap14.Java.Listing05.FirstException",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "ReturnProblem",
+            "request": "launch",
+            "mainClass": "Kap14.Java.Listing01.ReturnProblem",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "Grafikprogramm",
             "request": "launch",
             "mainClass": "Kap13.Java.Listing39_48.Grafikprogramm",
