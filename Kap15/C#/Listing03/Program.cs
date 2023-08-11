@@ -1,0 +1,1 @@
+﻿ByteReader.printBytes("C:\\temp\\MyBitmap.bmp", 100);

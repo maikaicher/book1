@@ -3,6 +3,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TextHandler",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing34_35.TextHandler",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "TextReader",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing34_35.TextReader",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing32_33.Test",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "TextFileExample",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing32_33.TextFileExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "ByteReader",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing04.ByteReader",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "BitmapGenerator",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing15_17.BitmapGenerator",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "BitmapGenerator",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing15.BitmapGenerator",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "ByteReader",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing06.ByteReader",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "ByteReader",
+            "request": "launch",
+            "mainClass": "Kap15.Java.Listing05.ByteReader",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "ExceptionExample",
             "request": "launch",
             "mainClass": "Kap14.Java.Listing08_13.ExceptionExample",
