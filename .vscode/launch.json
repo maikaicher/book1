@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "XmlSaxParser",
+            "request": "launch",
+            "mainClass": "Kap16.Java.Listing12.XmlSaxParser",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "TextHandler",
             "request": "launch",
             "mainClass": "Kap15.Java.Listing34_35.TextHandler",
