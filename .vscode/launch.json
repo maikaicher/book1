@@ -3,6 +3,108 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CompareExample",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing13_16.CompareExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "ArraySortExample",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing12.ArraySortExample",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing11.QuickSort",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing10.SelectionSort",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing09.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing08.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing07.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing05.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing04.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "java",
+            "name": "FindPrimes",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing03.FindPrimes",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
+            "name": "StringPerformance",
+            "request": "launch",
+            "mainClass": "Kap17.Java.Listing01_02.StringPerformance",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "XmlSaxParser",
             "request": "launch",
             "mainClass": "Kap16.Java.Listing12.XmlSaxParser",

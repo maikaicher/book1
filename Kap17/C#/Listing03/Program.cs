@@ -1,0 +1,1 @@
+﻿List<int> primes = FindPrimes.getPrimes(100000);
