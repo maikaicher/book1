@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FractalBuilder",
+            "request": "launch",
+            "mainClass": "Kap18.Java.Listing25_27.FractalBuilder",
+            "projectName": "github_9ff48dfc"
+        },
+        {
+            "type": "java",
             "name": "CompareExample",
             "request": "launch",
             "mainClass": "Kap17.Java.Listing13_16.CompareExample",

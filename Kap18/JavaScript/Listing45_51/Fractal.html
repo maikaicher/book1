@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fractalThread.js"></script>  
+    <script>
+        let cpuCount = 4;
+        let dimY = 1024;
+        let dimX = 2048;
+        let pixelDist = 0.001; 
+        let maxIteration = 50; 
+
+        let canv;
+        let myContext;
+        let subGraph;
+        let counter = 0;
+
+        let worker = []; 
+        for (let i = 0; i < cpuCount; i++) {
+            worker[i] = new Worker('fractalThread.js');
+            worker[i].addEventListener('message', function(e) {
+                drawImage(e.data);
+            });
+        } 
+
+        function startFractalThread() {
+            let noLinesPerThread = Math.floor(dimY / cpuCount);
+            let rFrom = 0;
+            let rTo = 0;
+            let threadCount = 0;
+            for (let i = 1; i <= cpuCount; i++) {
+                rTo = (i == cpuCount) ? dimY : i * noLinesPerThread;  
+                let config = new FractalConfig(dimX, dimY, rFrom, rTo, maxIteration, pixelDist);
+                config.sendMessage = true; 
+                worker[i-1].postMessage(JSON.stringify(config)); 
+                rFrom = rTo;
+            }
+        }
+
+        function startFractal() {
+            let config = new FractalConfig(dimX, dimY, 0, dimY, maxIteration, pixelDist);
+            config.sendMessage = false;
+            drawImage(calcPixel(JSON.stringify(config))); 
+        }        
+
+        class FractalConfig {
+            constructor(dimX, dimY, rFrom, rTo, maxIteration, pixelDist) {
+                this.dimX = dimX;
+                this.dimY = dimY;
+                this.rFrom = rFrom;
+                this.rTo = rTo;
+                this.threshold = 10;
+                this.maxIteration = maxIteration; 
+                this.pixelDist = pixelDist; 
+                this.startRe = 0.36001014891; 
+                this.startIm = 0.350001;  
+                this.halfDimRe = this.dimX / 2;
+                this.halfDimIm = this.dimY / 2;
+                this.thresSquare = this.threshold * this.threshold;
+                this.sendMessage = false;
+            }
+        }
+
+
+        function prepareCanvas() {
+            canv = document.getElementById("myCanvas");
+            myContext = canv.getContext("2d");
+            subGraph = myContext.createImageData(dimX, 1);
+        }
+
+        function drawImage(data) {
+            let calcResult = JSON.parse(data);
+            let pixel = calcResult.pixel;
+            let dat  = subGraph.data;
+            for (var y = calcResult.rTo - 1; y >= calcResult.rFrom; y--) {
+                for (var x = 0; x < calcResult.dimX; x++) {
+                    dat[x*4+0]   = (pixel[y][x] >> 16) & 0xff;
+                    dat[x*4+1]   = (pixel[y][x] >> 8) & 0xff;
+                    dat[x*4+2]   = pixel[y][x] & 0xff;
+                    dat[x*4+3]   = 0xff;
+                }
+                myContext.putImageData(subGraph, 0, y );  
+            }
+            if (calcResult.rTo == dimY) {
+                pixelDist /= 2;
+                maxIteration += 50;
+                counter++;
+                addLogInfo("<br/>" + counter);
+            }
+        }
+
+        function addLogInfo(info) {
+            document.getElementById("logOut").innerHTML += info;
+        }
+
+
+    </script>
+  </head>
+  <body onload="prepareCanvas()">
+	  <button id="noThread" onclick="startFractal ()">no Thread</button>
+	  <button id="withThread" onclick="startFractalThread()">Thread</button>
+	  <button id="check" onclick="addLogInfo('.')">check</button>
+        </br></br>
+        <canvas id="myCanvas" width="2048" height="1024"></canvas>
+	  <div id="logOut">Log:</div>
+  </body>
+<html>

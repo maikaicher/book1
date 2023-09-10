@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      let noOfCycles = 0;
+      let time = 5000;
+      let fractions = 100;
+      let countDown = 0;
+      function startCode() {		
+        logInfo("start");
+        countDown = fractions;
+        noOfCycles = 0;
+        setTimeout(getNoOfCycles, 0, (time / fractions));
+      }
+
+      function check1() {
+        logInfo("check1");
+      }
+
+      function check2() {
+        logInfo("check2");
+      }
+
+      function logInfo(info) {
+        var logDif = document.getElementById("logOut");
+        logDif.innerHTML = logDif.innerHTML + "<br/>" + info;
+      }
+
+      function getNoOfCycles(dTime) {
+        let start = Date.now();
+        let end = Date.now();
+        while(end - start < dTime) {
+          end = Date.now();
+          noOfCycles++;
+        }
+        if (--countDown == 0) {
+          let avgTime = time / noOfCycles;
+          logInfo("result " + avgTime*1000000 + " ns");
+        } else {
+          setTimeout(getNoOfCycles, 0, (time / fractions));
+        }
+      }
+    </script>
+  </head>
+  <body>
+	  <h1>LoopTest</h1>
+	  <button id="startCode" onclick="startCode()">go!</button>
+	  <button id="check1" onclick="check1()">check1</button>
+	  <button id="check2" onclick="check2()">check2</button>
+      </br></br>
+	  <div id="logOut">Log:</div>
+  </body>
+<html>

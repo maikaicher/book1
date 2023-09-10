@@ -51,17 +51,17 @@ class BitmapGenerator {
             0x00, 0x00, 0x00, 0x00  // Farbtabelleninfo – Standard 00
         };
         if (body.GetLength(0) == 0) {
-            return null;
+            return null!;
         } 
         if (body.GetLength(1) == 0) {
-            return null;
+            return null!;
         }
         int noOfImgBytes = body.Length;
         int fileSize = head.Length + noOfImgBytes;
-        if (!setBytesLittleEnd(2, fileSize, head)) { return null;}
-        if (!setBytesLittleEnd(18, width, head)) { return null;}
-        if (!setBytesLittleEnd(22, height, head)) { return null;}
-        if (!setBytesLittleEnd(34, noOfImgBytes, head)) { return null;}
+        if (!setBytesLittleEnd(2, fileSize, head)) { return null!;}
+        if (!setBytesLittleEnd(18, width, head)) { return null!;}
+        if (!setBytesLittleEnd(22, height, head)) { return null!;}
+        if (!setBytesLittleEnd(34, noOfImgBytes, head)) { return null!;}
         byte[] data = new byte[fileSize];
         int pos = 0;
         for (int i = 0; i < head.Length; i++) {
