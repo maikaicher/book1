@@ -19,7 +19,7 @@ long getTimestamp() {
 primeList* getPrimes(int maxVal) {
     long start = getTimestamp();
 
-    primeList* rootElement;
+    primeList* rootElement = (primeList*) malloc(sizeof(primeList));
 
     primeList* currentElement = rootElement;
     currentElement->value = -1;
@@ -45,8 +45,8 @@ primeList* getPrimes(int maxVal) {
 void freeRam(primeList* myElement) {
     if (myElement->value != -1) {
         freeRam(myElement->next);
-        free(myElement->next);
     }
+    free(myElement);
 }
 
 int main() {

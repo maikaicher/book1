@@ -7,12 +7,12 @@ def getPrimes(maxVal):
     primes = [];
                     
     for i in range(2, maxVal, 1):
-        isPrime = True;
+        isPrime = True
         for d in range(2, i, 1):
             if i%d == 0:
                 isPrime = False
-            if isPrime:
-                primes.append(i)
+        if isPrime:
+            primes.append(i)
 
     print(math.floor((time.time() - start)*1000))
     return primes
